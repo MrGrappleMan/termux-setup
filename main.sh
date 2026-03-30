@@ -19,6 +19,7 @@ apt full-upgrade -y
 pkg upgrade -y
 
 ### Package install
-pkg install -y wget curl aria2 proot proot-distro root-repo x11-repo git python hollywood fastfetch tar
+pkg install -y wget curl aria2 proot proot-distro root-repo x11-repo git python fastfetch tar btop fish nano
 
+# Clean packages
 pkg autoclean
