@@ -2,8 +2,7 @@
 
 This repo automates the process of common tools, packages and libraries.
 There is also a provision for proot based distro installation.
-All distros must contain the ability to VNC into the desktop environment
-that comes pre-installed with the distro.
+All distros have the ability to VNC into the desktop environment
 
 ## Installation
 
@@ -18,7 +17,4 @@ wget https://raw.githubusercontent.com/MrGrappleMan/termux-setup/master/main.sh 
 
 The main procedure will occur automatically, you will be prompted for actions such
 as selecting a distro to install, additional packages to install, and other
-settings
-
-For most users, distro 1 is recommended as it provides a stable and easy to use
-environment
+settings.
