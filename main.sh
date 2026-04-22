@@ -1,7 +1,7 @@
-#! /bin/bash
+#!/bin/fish
 
 # Basic Setup
-## Enviroment permissions, base packages, termux 
+## Android permissions, base packages, environment and scripts
 
 termux-setup-package-manager
 termux-setup-storage
@@ -19,5 +19,5 @@ pkg upgrade -y
 ## Install
 pkg install -y wget curl aria2 proot proot-distro root-repo x11-repo git python fastfetch tar btop fish nano
 
-## Clean unnecessary packages
+## Clean unneeded package caches
 pkg autoclean
