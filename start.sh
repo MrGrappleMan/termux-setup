@@ -30,10 +30,12 @@ pkg update
 pkg upgrade -y
 
 ### Install
+echo "Installing pkg repos..."
+pkg install -y root-repo x11-repo
+
 echo "Installing packages..."
 pkg install -y wget curl aria2 \
     proot proot-distro \
-    root-repo x11-repo \
     git python fastfetch tar btop \
     fish zsh bash \
     nano
