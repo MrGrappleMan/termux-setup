@@ -6,26 +6,6 @@
 clear
 echo "Starting termux-setup..."
 
-# Get repo
-#-For copying over configurations and presets
-
-## Enter main directory
-cd
-
-## Delete old repo
-echo "Deleting old termux-setup repository if present..."
-rm -rf termux-setup
-
-## Clone repo
-echo "Cloning termux-setup repository..."
-git clone https://github.com/MrGrappleMan/termux-setup.git
-
-## Make permissive
-chmod -R a+rw termux-setup
-
-## Enter repo directory
-cd termux-setup
-
 # Setup
 #-Android permissions, base packages, environment and scripts
 
@@ -61,6 +41,26 @@ pkg install -y wget curl aria2 \
 ### Cleanup
 echo "Cleaning up package caches..."
 pkg autoclean # remove unneeded package caches
+
+# Get repo
+#-For copying over configurations and presets
+
+## Enter main directory
+cd
+
+## Delete old repo
+echo "Deleting old termux-setup repository if present..."
+rm -rf termux-setup
+
+## Clone repo
+echo "Cloning termux-setup repository..."
+git clone https://github.com/MrGrappleMan/termux-setup.git
+
+## Make permissive
+chmod -R a+rw termux-setup
+
+## Enter repo directory
+cd termux-setup
 
 # Distros
 #-Distro installation by proot or other methods
