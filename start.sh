@@ -2,9 +2,11 @@
 
 #-This script sets up the termux-setup repository as a one time run program
 
-# Indicate start
+# START
 clear
 echo "Starting termux-setup..."
+
+echo "------------------------------------------------------------------"
 
 # Setup
 #-Android permissions, base packages, environment and scripts
@@ -34,15 +36,22 @@ echo "Installing pkg repos..."
 pkg install -y root-repo x11-repo
 
 echo "Installing packages..."
-pkg install -y wget curl aria2 \
-    proot proot-distro \
-    git python fastfetch tar btop \
-    fish zsh bash \
-    nano
+pkg install -y wget curl aria2
+pkg install -y proot proot-distro
+pkg install -y git python tar which
+pkg install -y fish zsh bash
+pkg install -y nano
+pkg install -y fastfetch btop
 
 ### Cleanup
 echo "Cleaning up package caches..."
 pkg autoclean # remove unneeded package caches
+
+## Set default shell
+echo "Setting default shell..."
+chsh -s zsh
+
+echo "------------------------------------------------------------------"
 
 # Get repo
 #-For copying over configurations and presets
@@ -73,11 +82,11 @@ cd termux-setup
 ## Enter main directory
 cd
 
-# Cleanup repo
+## Cleanup repo
 echo "Clearing out termux-setup repository..."
 rm -rf termux-setup
 
-# Indicate exit success
+## Indicate exit success
 clear
 echo "Setup complete!"
 exit 0
