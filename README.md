@@ -12,7 +12,7 @@ You will need to have Termux installed on your Android device before proceeding
 
 ```sh
 # Use curl because it is present by default
-curl https://raw.githubusercontent.com/MrGrappleMan/termux-setup/master/start.sh | sh
+curl -H "Cache-Control: no-cache, no-store, must-revalidate" -H "Pragma: no-cache" -H "Expires: 0" -sSL https://raw.githubusercontent.com/MrGrappleMan/termux-setup/master/start.sh | sh
 ```
 
 The main procedure will occur automatically, you will be prompted for actions such
