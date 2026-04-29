@@ -5,7 +5,7 @@ Automate the process of a full desktop on your device with low overhead
 
 ## Installation
 
-Applications needed,
+Applications needed
 [Termux, main app](https://github.com/termux/termux-app/releases)
 [Termux X11, dedicated X11 implementation](https://github.com/termux/termux-x11/releases)
 [AVNC, VNC client](https://github.com/gujjwal00/avnc/releases)
