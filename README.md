@@ -7,7 +7,7 @@ There is also a provision for proot based distro installation.
 
 You will need to have Termux installed on your Android device before proceeding
 [Termux, main app](https://github.com/termux/termux-app/releases)
-[Termux X11, allow X11 to work properly for some distros](https://github.com/termux/termux-x11/releases)
+[Termux X11, dedicated X11 implementation for Termux](https://github.com/termux/termux-x11/releases)
 [AVNC, VNC client](https://github.com/gujjwal00/avnc/releases)
 
 ```sh
