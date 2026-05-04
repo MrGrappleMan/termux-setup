@@ -22,20 +22,21 @@ termux-setup-storage # Allow access to internal storage
 #-Use apt or dpkg only if there is something broken
 
 ### Fix broken data if there is any
-echo "Fixing broken data if present..."
+echo "Fixing broken data if present"
 dpkg --configure -a
 apt --fix-broken install
 
 ### Update
-echo "Updating packages..."
+echo "Updating packages"
 pkg update
 pkg upgrade -y
 
 ### Install
-echo "Installing pkg repos..."
+echo "Installing pkg repos"
 pkg install -y root-repo x11-repo
 
-echo "Installing packages..."
+echo "Installing packages"
+
 pkg install -y git python nano sudo
 pkg install -y fish zsh bash
 pkg install -y wget curl aria2
@@ -45,11 +46,11 @@ pkg install -y fastfetch btop which
 pkg install -y plasma
 
 ### Cleanup
-echo "Cleaning up package caches..."
+echo "Cleaning up package caches"
 pkg autoclean # remove unneeded package caches
 
 ## Set default shell
-echo "Setting default shell..."
+echo "Setting default shell"
 chsh -s zsh
 
 echo "------------------------------------------------------------------"
