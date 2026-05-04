@@ -88,6 +88,5 @@ echo "Clearing out termux-setup repository..."
 rm -rf termux-setup
 
 ## Indicate exit success
-clear
 echo "Setup complete!"
 exit 0
