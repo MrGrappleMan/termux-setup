@@ -36,11 +36,11 @@ echo "Installing pkg repos..."
 pkg install -y root-repo x11-repo
 
 echo "Installing packages..."
+pkg install -y git python nano sudo
+pkg install -y fish zsh bash
 pkg install -y wget curl aria2
 pkg install -y proot proot-distro
 pkg install -y tar zstd
-pkg install -y git python nano sudo
-pkg install -y fish zsh bash
 pkg install -y fastfetch btop which
 pkg install -y plasma
 
